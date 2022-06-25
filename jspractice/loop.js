@@ -1,170 +1,343 @@
-// //if condition
-// let ram = "40kg";
-// shyam = "50kg";
-// if (shyam != ram){
-//     console.log ("shyam has same weight as ram")
+//for loop
+// let work=[
+//     {title:'dfd'},
+//     {title:'dsdfd'},
+//     {title:'ddsfd'},
+//     {title:'ddssdfd'},
+// ]
+// for (i=0; i<=work.length-1;i++){
+//     console.log(work[i].title)
 // }
 
-// //if else condition
-// let age = 21;
-// if (age>= 18){
-//     console.log ("you are eligible to vote")
-// }else{
-//     console.log ("you are not eligible to vote")
+// let ball=["football","volleyball","cricketball"]
+
+// for(i=0; i<=ball.length;i++){
+//     console.log(ball[0])
+//     console.log(' ')
 // }
 
-// //if,else if,else conditon
-// let horse = 20;
-// donkey = 30;
-// if (horse >=donkey){
-//     console.log ("horse is greater")
-// }
-// else if(donkey<=horse){
-//     console.log ("horse is greater")
-// }
-// else{
-//     console.log ("donkey is greater")
+// for (var i = 0; i < 5; i++){
+//     let name = "john"
+//     console.log ("HI" + name);
 // }
 
-// //if else with using function
-// let sun = "2000m"
-// moon = "2000m"
-// function add (a,b){
-//     let ans = (a+b);
-//     return ans;
+// var arr = [1,2,3, 4,5];
+// for (var i=0; i < arr.length;i++){
+//     console.log (arr[i]);
 // }
 
-// function sdd (x,y){
-//     let cds = (parseFloat(x)+parseFloat(y));
-//     return cds;
-// }
-
-// if (sun !==moon){
-//     console.log (add(sun,moon));
-// }
-// else{
-//     console.log (sdd(sun,moon));
+// //nested for loop
+// for (var i = 0; i <5; i ++){
+//     for (var j = 0; j<5; j++){
+//         console.log (i+""+j);
+//     }
 // }
 
 
 
-// let value ={lion:40,tiger:80,leopard:90}
-// function leo(){
-//     console.log ("you are right")
+// //left-triangle pattern
+// let star='';
+// for(i=0;i<=5;i++){
+//     for(j=0;j<=i;j++){
+// star+="*"
+//     }
+//     star+='\n'
 // }
-// function wro(){
-//     "you are wrong"
-// }
-// function sum (a,b){
-//     addi = (a+b);
-//     console.log (a,b)
-//     return addi
-// }
-
-// if (value.leopard=90){
-//     console.log (leo)
-// }else {
-//     console.log (wro);
-// }
-
-// if((value.lion=40) && (value.tiger=80)){
-//     console.log (sum(value.lion,value.tiger))
-// }
+// console.log (star);
 
 
-// var abc = '';
-// if (1 === 0) {
-//   function a() {
-//     abc = 7;
+// //downward triangle pattern
+// let stars='';
+// for(i=5;i>=0;i--){
+//     for(j=0;j<=i;j++){
+// stars+="*"
+//     }
+//     stars+='\n'
+// }
+// console.log (stars);
+
+
+// //right pascal triangle pattern
+// let n = 5;
+// let string = "";
+// for (let i = 1; i <= n; i++) {
+//   for (let j = 0; j < i; j++) {
+//     string += "*";
 //   }
-// } else if ('a' === 'a') {
-//   function a() {
-//     abc = 19;
+//   string += "\n";
+// }
+// for (let i = 1; i <= n - 1; i++) {
+//   for (let j = 0; j < n - i; j++) {
+//     string += "*";
 //   }
-// } else if ('foo' === 'bar') {
-//   function a() {
-//     abc = 'foo';
-//   }
+//   string += "\n";
 // }
-// a();
-// console.log (abc);
+// console.log(string);
 
-
-let value={
-    one:5,
-    two:6,
-    three:'Add'
-}
-
-// let values={
-//     one:10,
-//     two:6,
-//     three:'Add'
+// //square pattern 
+// let sq=""
+// for (i=0;i<=4;i++){
+//     for (j=0; j<=4;j++){
+//      sq+="*"
+//     }
+//     sq+="\n"
 // }
+// console.log (sq);
 
-// let valuess={
-//     one:10,
-//     two:26,
-//     three:'sub'
+
+
+// *****
+// *   *
+// *   *
+// *   *
+// *****
+let n = 5; // row or column count
+// defining an empty string
+let cn = "";
+for(let i = 0; i < n; i++) { // external loop
+  for(let j = 0; j < n; j++) { // internal loop
+    if(i === 0 || i === n - 1) {
+      cn += "*";
+    }
+    else {
+      if(j === 0 || j === n - 1) {
+        cn += "*";
+      }
+      else {
+        cn += " ";
+      }
+    }
+  }
+  // newline after each row
+  cn += "\n";
+}
+// printing the string
+console.log(cn);
+
+
+
+
+  //         *
+  //       * *
+  //     * * *
+  //   * * * *
+  // * * * * *
+  // let u = 5;
+  // let word = "";
+  // for (let i = 1; i <= u; i++) {
+  //   // printing spaces
+  //   for (let j = 0; j < u - i; j++) {
+  //     word += " ";
+  //   }
+  //   // printing star
+  //   for (let k = 0; k < i; k++) {
+  //     word += "*";
+  //   }
+  //   word += "\n";
+  // }
+  // console.log(word);
+
+// K
+// K i
+// k i s
+// k i s a
+// k i s a n
+let a = ['k','i','s','a','n']
+let messi = "";
+for (let i = 0; i<=a.length-1;i++){
+  for (j = 0; j<=i; j++){
+     messi+=a[j];
+  }
+  messi+='\n';
+}
+console.log (messi);
+
+//      *
+//     ***
+//    *****
+//   *******
+//  *********
+function pyramid(n) {  // Input or number of rows
+  for (var i = 1; i <= n; i++) {
+      var s = "";
+      // For every each counter there exist 2*n-1 value
+      for (var j = 1; j <= (2 * n - 1); j++) {
+        // Hint: Check the workbook image
+          (j >= n + 1 - i && j <= n - 1 + i) ? s += "*" : s += " ";   
+      }
+      console.log(s);
+  }
+}
+pyramid(5);
+
+// *********
+//  *******
+//   *****
+//    ***
+//     *
+let o = 5;
+let happy = '';
+for (let i = 0; i<o;i++){
+  for(let j=0;j<i;j++){
+    happy+=" ";
+  }
+  for(let k = 0; k<2*(o-i)-1;k++){
+    happy+="*";
+  }
+  happy+="\n";
+}
+console.log (happy);
+
+
+//     *
+//    * *
+//   *   *
+//  *     *
+// *********
+let rows = 5;
+let hol = "";
+// External loop
+for (let i = 1; i <= rows; i++) {
+  // printing spaces
+  for (let j = 1; j <= rows - i; j++) {
+    hol += " ";
+  }
+  // printing star
+  for (let k = 0; k < 2 * i - 1; k++) {
+    if(i === 1 || i === rows) {
+      hol += "*";
+    }
+    else {
+      if(k === 0 || k === 2 * i - 2) {
+        hol += "*";
+      }
+      else {
+        hol += " ";
+      }
+    }
+  }
+  hol += "\n";
+}
+console.log(hol);
+
+//     *
+//    ***
+//   *****
+//  *******
+// *********
+//  *******
+//   *****
+//    ***
+//     *
+let no = 5;
+let dia = "";
+// Upside pyramid
+for (let i = 1; i <= no; i++) {
+  // printing spaces
+  for (let j = no; j > i; j--) {
+    dia += " ";
+  }
+  // printing star
+  for (let k = 0; k < i * 2 - 1; k++) {
+    dia += "*";
+  }
+  dia += "\n";
+}
+// downside pyramid
+for (let i = 1; i <= no - 1; i++) {
+  // printing spaces
+  for (let j = 0; j < i; j++) {
+    dia += " ";
+  }
+  // printing star
+  for (let k = (no - i) * 2 - 1; k > 0; k--) {
+    dia += "*";
+  }
+  dia += "\n";
+}
+console.log(dia);
+
+
+
+// //number patterns
+// // 1
+// // 12
+// // 123
+// // 1234
+// // 12345
+// let num = "";
+// for (i=1;i<=5;i++){
+//     for(j=1; j<=i;j++){
+//         num+=j;
+//     }
+//     num+="\n";
 // }
+// console.log (num);
 
-function abb(a,b){
-    console.log(a,b)
-}
+// //12345
+// //1234
+// //123
+// //12
+// //1
+// let bar='';
+// for(i=5;i>=0;i--){
+//     for(j=1;j<=i;j++){
+//         bar+=j;
+//     }
+//     bar+='\n'
+// }
+// console.log (bar)
 
-function Test(x){
-    // console.log(x)
-    if(x.three==='Add'){
-        console.log(x)
-        abb(x.one,x.two);
-    }else{
-        console.log(x)
-    }
-}
+// let l=5;
+// let output ='';
+// for(let i=1; i <=n;i++){
+//     for (let j=1;j<=l-i+1;j++){
+//         output+=j;
+//     }
+//     output+="\n";
+// }
+// console.log (output)
+
+// // 1
+// // 2 3
+// // 4 5 6
+// // 7 8 9 10
+// let a=4;
+// box = '';
+// ad=1;
+// for(i=0;i<4;i++){
+//     for(j=0;j<=i;j++){
+//         box+=ad;
+//         ad++
+//     }
+//     box+='\n';
+// }
+// console.log (box)
+
+// // 1 
+// // 2 2
+// // 3 3 3
+// // 4 4 4 4
+// // 5 5 5 5 5
+// hlo ='';
+// for(i=1;i<=5;i++){
+//     for(j=1;j<=i;j++){
+//         hlo+=i;
+//     }
+//     hlo+='\n';
+// }
+// console.log (hlo);
 
 
-Test(value);
-// Test(values);
-// Test(valuess)
-
- 
-//this is function overwriting
-let food ={chicken:30,mutton:90,buff:"add"}
-let car ={chicken:40,mutton:89,buff:"subt"}
-let hell ={chicken:80,mutton:100,buff:"mul"}
-let bell ={chicken:100,mutton:200,buff:"diiv"}
-function add (c,d){
-    console.log (c+d);
-}
-function sub (a,b){
-    console.log (a-b);
-}
-function mult(x,y){
-    console.log (x*y);
-}
-function divi (b,n){
-    console.log (b/n);
-}
-
-function adc(y){
-    if(y.buff==="add"){
-        console.log (y)
-        add(y.chicken,y.mutton)
-    }
-    else if (y.buff==="subt"){
-        console.log (y)
-        sub(y.mutton,y.chicken);
-    }
-    else if (y.buff==="mul"){
-        console.log (y)
-        mult(y.chicken,y.mutton);
-    }
-    else{
-        console.log (y)
-        divi(y.mutton,y.chicken);
-    }
-}
-adc (food);
-adc (car);
-adc (hell);
-adc (bell);
+// // 1 2 3 4
+// // 1 2 3 
+// // 1 2 
+// // 1
+// let oop='';
+// for(let i=4;i>=4;i++){
+//     for(let j=1;j<=4;j++){
+//         oop+=j;
+//     }
+//     oop+='\n';
+// }
+// console.log (oop);
