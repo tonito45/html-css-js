@@ -137,20 +137,7 @@ console.log(cn);
   // }
   // console.log(word);
 
-// K
-// K i
-// k i s
-// k i s a
-// k i s a n
-let a = ['k','i','s','a','n']
-let messi = "";
-for (let i = 0; i<=a.length-1;i++){
-  for (j = 0; j<=i; j++){
-     messi+=a[j];
-  }
-  messi+='\n';
-}
-console.log (messi);
+
 
 //      *
 //     ***
@@ -258,6 +245,38 @@ for (let i = 1; i <= no - 1; i++) {
 console.log(dia);
 
 
+//     *
+//    **
+//   ***
+//  ****
+// *****
+//  ****
+//   ***
+//    **
+//     *
+let st = 5;
+let lio= "";
+for (let i = 1; i<=st;i++){
+  for(let j=1;j<=st-i;j++){
+    lio+=" ";
+  }
+  for(let k=1;k<=i;k++){
+    lio+="*";
+  }
+  lio+="\n";
+}
+for(i=1;i<=st-1;i++){
+  for(let j=1;j<=i;j++){
+    lio+=" ";
+  }
+  for(let k=1;k<=st-i;k++){
+    lio+="*"
+  }
+  lio+="\n";
+}
+console.log (lio);
+
+
 
 // //number patterns
 // // 1
@@ -341,3 +360,106 @@ console.log(dia);
 //     oop+='\n';
 // }
 // console.log (oop);
+
+//alphabet pattern
+// K
+// K i
+// k i s
+// k i s a
+// k i s a n
+let a = ['k','i','s','a','n']
+let messi = "";
+for (let i = 0; i<=a.length-1;i++){
+  for (j = 0; j<=i; j++){
+     messi+=a[j];
+  }
+  messi+='\n';
+}
+console.log (messi);
+
+// k
+// u u
+// s s s
+// i i i i
+// n n n n n
+// a a a a a a 
+let V = '';
+let ninja = ['k','u','s','i','n','a'];
+for(let i = 0;i<=5;i++){
+  for(let j = 0;j<=i;j++){
+    V+=ninja[i];
+  }
+  V+="\n";
+}
+console.log (V);
+
+// A
+// B C
+// D E F
+// G H I J
+// K L M N O
+let A = '';
+let count=0;
+let stink=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o']
+for(let i = 0;i<=5;i++){
+  for(let j=0;j<i;j++){
+    A+=stink[count];
+    count++;
+  }
+  A+="\n";
+}
+console.log (A);
+
+// k i s a n
+// k i s A
+// k i s
+// k i
+// k
+let M=['k','i','s','a','n']
+let hjr="";
+for(let i=5;i>0;i--){
+  for(let j=0;j<i;j++){
+    hjr+=M[j];
+  }
+  hjr+="\n";
+}
+console.log (hjr);
+
+
+//for in loop (it loops through properties of objects)
+let detail="";
+var person = {
+  fname:"ram",
+  lname:"magar",
+  age:102
+};
+for(let key in person){
+  detail+=person[key];
+  detail+="\n";
+}
+
+console.log (detail);
+
+
+
+// N 
+// N I
+// N I S
+// N I S C
+// N I S C H
+// N I S C H A
+// N I S C H A L
+let nama=['N','I','S','C','H','A','L']
+let ord="";
+for(let i = 0;i<=nama.length;i++){
+  for(let j = 0; j<i;j++){
+    ord+=nama[j];
+  }
+  ord+='\n';
+}
+console.log (ord);
+
+
+
+
+
