@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register-form</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-field">
+            <header>Register Form</header>
+            <div class="form-ctrl">
+                <div class="input-ctrl">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname">
+                </div>
+                <div class="input-ctrl">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname">
+                </div>
+            </div>
+            <div class="form-ctrl">
+                <div class="input-ctrl">
+                    <label for="email">Email</label>
+                    <input type="text" id="email">
+                </div>
+                <div class="gender-ctrl">
+                    <label for="gender">Gender</label>
+                    <div class="gender">
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="check">
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="check">
+                    </div>
+                </div>
+            </div>
+            <div class="form-ctrl">
+                <div class="input-ctrl">
+                    <label for="bday">Birthday</label>
+                    <input type="date" id="bday">
+                </div>
+                <div class="input-ctrl">
+                    <label for="phn">Phone number</label>
+                    <input type="number" id="phn">
+                </div>
+            </div>
+            <div class="input-ctrl sus">
+                <label for="sub">Subject</label>
+                <select name="sub" id="sub">
+                    <option value="chosse"selected disabled>Choose your subject</option>
+                    <option value="englis">English</option>
+                    <option value="Mat">Math</option>
+                    <option value="sceince">Science</option>
+                </select>
+            </div>
+            <div class="submit">
+                <input type="button" value="Submit" >
+            </div>
+        </div>
+    </div>
+</body>
+</html>

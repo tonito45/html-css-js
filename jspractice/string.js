@@ -119,3 +119,9 @@ let profit = 200;
 let cp= 300;
 total= `Total:${(profit+cp)}`;
 console.log (total);
+
+let nam = 'kisan';
+function reversestr(str){
+    return str.split("").reverse().join("");
+}
+console.log (reversestr(nam));
