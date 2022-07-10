@@ -47,14 +47,14 @@
 
 
 // //downward triangle pattern
-// let stars='';
-// for(i=5;i>=0;i--){
-//     for(j=0;j<=i;j++){
-// stars+="*"
-//     }
-//     stars+='\n'
-// }
-// console.log (stars);
+ let stars='';
+ for(i=5;i>=0;i--){
+     for(j=0;j<=i;j++){
+ stars+="*"
+     }
+     stars+='\n'
+ }
+ console.log (stars);
 
 
 // //right pascal triangle pattern
@@ -459,7 +459,68 @@ for(let i = 0;i<=nama.length;i++){
 }
 console.log (ord);
 
+//
+string="";
+for(i=1;i<=5;i++){
+for(j=5;j>=i;j--){
+  string += "*";
+}
+string +="\n";
+}
+console.log(string);
+
+//
+answer="";
+i=1;
+while(i<=5){
+  j=5;
+  while(j>=i){
+    answer +="*";
+    j--;
+  }
+  answer +="\n";
+  i++;
+}
+console.log(answer);
+
+//
+a="";
+i=1;
+do{
+  j=5;
+ do{
+  a+="*";
+  j--;
+ }
+ while(j>=i)
+ a+="\n";
+ i++;
+}
+while(
+  i<=5
+)
+console.log(a);
 
 
 
 
+
+rue="";
+i=1;
+do {
+ rue+="the number is"+i;
+ rue+='\n'
+ i++;
+}
+while(i<=9);
+console.log (rue);
+
+//
+fue='';
+i=1
+while(i<=10){
+  fue+="the number is"+i;
+  fue+="\n"
+  i++;
+}
+console.log (fue)

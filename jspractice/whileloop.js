@@ -31,10 +31,6 @@ do{
 while(i<10);
 console.log (fruit);
 
-let veg = '';
-i= 1;
-
-
 //nested while loops
 // ******
 // ******
@@ -43,36 +39,69 @@ i= 1;
 // ******
 // ******
 
-let nar='';
-m=0;
-while(m <= 5) {
-    n=0;
-    while(n<=5){
-        nar+="*";
-        n++
+// let nar='';
+// m=0;
+// while(m <= 5) {
+//     n=0;
+//     while(n<=5){
+//         nar+="*";
+//         n++
+//     }
+//     nar+="\n";
+//     m++;
+// }
+// console.log (nar);
+
+//nested do while
+let sar = "";
+n=0;
+do{
+    o=0;
+    do{
+        sar+="*";
+        o++
     }
-    nar+="\n";
-    m++;
+    while(o<=5)
+    sar+="\n";
+    n++;
 }
-console.log (nar);
+while(n<=5)
+console.log (sar);
+
 
 // *****
 // ****
 // ***
 // **
 // *
-let bar = "";
+// let bar = "";
+// i=5;
+// while(i>=1){
+//     j=1;
+//     while(j<=i){
+//         bar+="*";
+//         j++;
+//     }
+//     bar+="\n";
+//     i--;
+// }
+// console.log (bar);
+
+let tri = "";
 i=5;
-while(i>=1){
+do{
     j=1;
-    while(j<=i){
-        bar+="*";
+    do{
+        tri+="*";
         j++;
     }
-    bar+="\n";
+    while(j<=i)
+    tri+="\n";
     i--;
 }
-console.log (bar);
+while(i>=1)
+console.log (tri)
+
 
 // *
 // **
@@ -116,18 +145,18 @@ console.log (num);
 // 1234
 // 12345
 
-let digit ='';
-i=i;
-while(i<=5){
-    j=1;
-    while(j<=i){
-        digit+=j;
-        j++;
-    }
-    digit+="\n";
-    i++;
-}
-console.log (digit);
+// let digit ='';
+// i=i;
+// while(i<=5){
+//     j=1;
+//     while(j<=i){
+//         digit+=j;
+//         j++;
+//     }
+//     digit+="\n";
+//     i++;
+// }
+// console.log (digit);
 
 // 1
 // 2 3
@@ -169,3 +198,42 @@ while(i<=4){
     i++;
 }
 console.log (pyramid);
+
+
+//N A R T
+//N A R
+//N A 
+//N
+let tan ="";
+let wor = "NART";
+i=wor.length-1;
+while(i>=0){
+    let j = 0;
+    while (j<=i){
+        tan+=wor[j];
+        j++;
+    }
+    tan+="\n"
+    i--
+}
+console.log (tan);
+
+
+M=2;
+N=3
+let Z = M+N;
+switch (Z) {
+    case "1":
+        Z = 1;
+        break;
+    case 5:
+        Z = 'one';
+        break;
+    case 2:
+        Z = 'two';
+        break;
+    default:
+        Z = 'not found';
+        break;
+}
+console.log(`The value is ${Z}`);

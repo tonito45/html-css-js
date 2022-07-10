@@ -134,3 +134,19 @@ function fly (a,b){
     return high;
 }
 console.log (fly(jet,heli));
+
+
+//normal function
+function sum(a,b){
+    return a+b;
+}
+//arrow function
+let sum2 = (a,b) => a+b ;
+
+//normal
+function isPositive(number ){
+    return number>=0;
+}
+
+//arrow function;
+let ispositive = (number) => number >=0;

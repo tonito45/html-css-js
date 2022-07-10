@@ -52,6 +52,8 @@ const brand=["nike","adidas","puma"]
 brand[0]="kine"; //it changes the index 0 into "kine"
 console.log (brand);
 
+
+
 //Array to strings = toString()
 const hey= ["time","minutes","hours"];
 console.log (hey.toString());
@@ -74,7 +76,7 @@ console.log (li);
 
 //The shift() method removes the first array element and "shifts" all other elements to a lower index.
 const di = ['car','bikes','cycles'];
-console.log (di.shift());
+console.log (di.shift('car'));
 console.log  (di);//car is shifted out hence the output will be bikes,cycles
 
 const ei = ['hi','hello','bye'];
@@ -99,7 +101,6 @@ console.log (scl);
 const veg = ['cabbage','potato','tomato'];
 console.log (veg.slice(1));
 console.log (veg);
-
 
 
 
@@ -175,3 +176,112 @@ const cars = [
 
  let mypnum = digit.map(myp);
  console.log (mypnum);
+
+ let numbers = [2,4,6,8];
+//function to return the square of number
+function square(number){
+    return number * number;
+}
+
+let square_numbers=numbers.map(square);
+console.log (square_numbers);
+
+let intefer = [2,3,4,5,6];
+function mult (num){
+    return num*4;
+}
+let multarr = intefer.map(mult);
+console.log (multarr);
+
+//
+const human = [
+    {firstname:"Malcom" ,lastname: "Reynolds"},
+    {firstname: "Kaylee", lastname: "Fyre"},
+    {firstname: "Hana" , lastname:"leoo"}
+];
+let getfullname=(item) => [item.firstname,item.lastname].join(" ");
+let fuulname=human.map(getfullname);
+console.log (fuulname);
+
+//
+const prices = [1800,2000,3000,5000,500,8000];
+let newPrices = prices.map(Math.sqrt);
+console.log (newPrices);
+
+//
+const strring = "barcelona";
+const newstrring =strring.split('');
+console.log (newstrring);
+
+//
+const employees = [
+    { name: "Adam", salary: 5000, bonus: 500, tax: 1000 },
+    { name: "Noah", salary: 8000, bonus: 1500, tax: 2500 },
+    { name: "Fabiano", salary: 1500, bonus: 500, tax: 200 },
+    { name: "Alireza", salary: 4500, bonus: 1000, tax: 900 },
+];
+
+const calcAmt = (obj) => {
+    newObj ={};
+    newObj.name = obj.name;
+    newObj.netearning = obj.salary + obj.bonus - obj.tax;
+    return newObj;
+}
+ employees.map((val,i)=>{
+    console.log(val.salary)
+ });
+
+ //joining two array to form a single array
+let arr=['a','b','c','d'];
+brr=['e','f','g','h']
+arc=[...arr,...brr];
+console.log (arc);
+
+//
+let Teacher=[
+    {name:"kisan", age:28, subject:"computer"},
+    {name:"Hari", age:39, subject:"science"},
+    {name:"Ram", age:43, subject:"English"}
+]
+console.log (Teacher.find((c)=> c.age<30));
+//find method to find the first occurance of an element that satisfies a test..
+
+
+Teacher.map((value,i)=>{
+    console.log (value.age+10);
+})
+Teacher.map((val,i)=>{
+    console.log(val.name,val.subject);
+})
+
+let yak =Teacher.filter((value,i)=>{
+    if(value.age>=30){
+        console.log("they are old")
+    }
+})
+
+let add = {name:"sita", age:34, subject:"nepali"}
+let sur = {name:"leo", age:45, subject:"history"}
+
+let sp = Teacher.splice(1,0, add,sur)
+console.log  (sp);
+console.log (Teacher[0].name.includes("kisan"))
+
+
+//filter()
+let cities = [
+    {name: 'Los Angeles', population: 3792621},
+    {name: 'New York', population: 8175133},
+    {name: 'Chicago', population: 2695598},
+    {name: 'Houston', population: 2099451},
+    {name: 'Philadelphia', population: 1526006}
+];
+
+let bigCities = cities.filter((pop,i)=>pop.population>3000000).sort((c1,c2)=>c1.population-c2.population);
+console.log (bigCities);
+//it filters out cities that has population more than 3000000;
+
+//every()
+let evens = [1,3,4,5];
+console.log (evens.some((num)=>num<2))
+console.log (evens.forEach((ins)=>ins*2))
